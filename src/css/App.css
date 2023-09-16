@@ -3,11 +3,8 @@
 :root {
   --background-color: #222222;
   --pure-white: #FFFFFF;
-  /* linear-gradient(0deg, rgba(109, 109, 109, 0.5), rgba(109, 109, 109, 0.5)); */
-  
 }
 
-/** Above are Old data*/
 #root{
   margin: 0;
   width: 100%;
@@ -35,6 +32,11 @@
   margin-left: 7%;
   margin-right: 7%;
   display: flex;
+}
+
+#body{
+  width: 100%;
+  align-items: center;
 }
 
 .btn-group{
@@ -74,4 +76,6 @@
   padding: 10px 12px;
   pointer-events: none;
 }
+
+
 
