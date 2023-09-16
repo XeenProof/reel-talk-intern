@@ -1,3 +1,5 @@
+
+
 :root {
   --background-color: #222222;
   --pure-white: #FFFFFF;
@@ -55,7 +57,7 @@
 
 #search{
   border: 0px;
-  width: 100%;
+  width: 95%;
   font-family: "Avenir Next";
   font-size: large;
   margin: 3px;

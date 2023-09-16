@@ -17,7 +17,7 @@ const Navbar:React.FC = () => {
                 </button>
             </div>
             <div className='btn-group'>
-                <AiOutlineSearch/>
+                <AiOutlineSearch className="btn"/>
                 <input type="search" id="search" name="search" placeholder="Search.."/>
             </div>
             <div className='btn-group'>
