@@ -1,4 +1,5 @@
 import React from "react";
+import {AiOutlineSearch} from "react-icons/ai"
 
 const Navbar:React.FC = () => {
     const handleClick = (text:string) => {
@@ -15,7 +16,8 @@ const Navbar:React.FC = () => {
                     Community
                 </button>
             </div>
-            <div className='right-inner-addon'>
+            <div className='btn-group'>
+                <AiOutlineSearch/>
                 <input type="search" id="search" name="search" placeholder="Search.."/>
             </div>
             <div className='btn-group'>
