@@ -16,7 +16,6 @@ const Navbar:React.FC = () => {
                 </button>
             </div>
             <div className='right-inner-addon'>
-                <i className="icon-search"></i>
                 <input type="search" id="search" name="search" placeholder="Search.."/>
             </div>
             <div className='btn-group'>
