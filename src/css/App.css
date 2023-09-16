@@ -1,0 +1,75 @@
+:root {
+  --background-color: #222222;
+  --pure-white: #FFFFFF;
+  /* linear-gradient(0deg, rgba(109, 109, 109, 0.5), rgba(109, 109, 109, 0.5)); */
+  
+}
+
+/** Above are Old data*/
+#root{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#main{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#main-background{
+  background-color: var(--background-color);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#navbar{
+  background-color: var(--pure-white);
+  flex-direction: column;
+}
+
+#navbar-content{
+  margin-left: 7%;
+  margin-right: 7%;
+  display: flex;
+}
+
+.btn-group{
+  display:flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0px;
+  flex: auto;
+}
+
+.btn{
+  margin: 3px;
+  font-family: "Avenir Next";
+  font-size: large;
+  border: 0px;
+  padding: 7px;
+  color: var(--background-color);
+  background-color: transparent;
+}
+
+#search{
+  border: 0px;
+  width: 100%;
+  font-family: "Avenir Next";
+  font-size: large;
+  margin: 3px;
+  padding: 7px;
+}
+
+.btn:hover{
+  text-decoration: underline;
+}
+
+.right-inner-addon i {
+  position: absolute;
+  right: 0px;
+  padding: 10px 12px;
+  pointer-events: none;
+}
+
