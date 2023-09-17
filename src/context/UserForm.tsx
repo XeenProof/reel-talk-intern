@@ -1,51 +1,81 @@
-import React,{ createContext } from "react";
+import { ReactElement, ReactNode, createContext, useCallback, useReducer } from "react";
 
-export interface UserFormFormat{
-    displayName?: string;
-    location?: string;
-    description?: string;
+type StateType = {
+    display_name: string;
+    location: string;
+    description: string;
 
-    counter: number;
+    DoBMonth: number;
+    DoBDay: number;
+    DoBYear: number;
+
+    GenreId: number[];
+    MovieId: number[];
 }
 
-interface UserFormFormatV2{
-    data: UserFormFormat,
-    mutators: Record<string, ()=>void>
+const initState:StateType = {
+    display_name: '',
+    location: '',
+    description: '',
+
+    DoBMonth: 1,
+    DoBDay: 1,
+    DoBYear: 2001,
+
+    GenreId: [],
+    MovieId: []
 }
 
-
-
-
-interface Props{
-    children:React.ReactNode
+const enum REDUCER_ACTION_TYPE{
+    UPDATE_FIELD
 }
 
-const UserFormContext = createContext<UserFormFormatV2>({data:{counter:2}, mutators:{}});
+type ReducerAction = {
+    type: REDUCER_ACTION_TYPE,
+    payload?: Record<string, any>
+}
 
-export class UserFormContextProvider extends React.Component<Props,UserFormFormatV2>{
-    state = {data:{counter:2}, mutators:{}};
-
-    updateState(data: UserFormFormat):void {
-        this.setState({data});
-    }
-
-    // state.mutators.add = () => {
-    //     let counter = this.state.data.counter+1;
-    //     this.updateState({...this.state.data, counter:counter});
-    // }
-
-    constructor(props:Props){
-        super(props);
-    }
-    
-
-    render(): React.ReactNode {
-        return (
-            <UserFormContext.Provider value={this.state}>
-                {this.props.children}
-            </UserFormContext.Provider>
-        )
+const reducer = (state: StateType, action: ReducerAction): StateType => {
+    switch(action.type){
+        case REDUCER_ACTION_TYPE.UPDATE_FIELD:
+            if(!action.payload){return state;}
+            return {...state, [action.payload.key]:action.payload.value}
+        default:
+            return state;
     }
 }
 
-export default UserFormContext;
+const useUserFormContext = (initState:StateType) => {
+    const [state, dispatch] = useReducer(reducer, initState)
+
+    const updateField = useCallback((key:string, value:any) => {
+        let payload = {key:key, value:value};
+        dispatch({
+            type: REDUCER_ACTION_TYPE.UPDATE_FIELD,
+            payload: payload
+        })
+    }, [])
+
+    return {state, updateField}
+}
+
+type UserFormContextType = ReturnType<typeof useUserFormContext>
+
+const initContextState: UserFormContextType = {
+    state: initState,
+    updateField: (key:string, value:any) => {}
+}
+
+export const UserFormContext = createContext<UserFormContextType>(initContextState);
+
+type ChildrenType = {
+    children?: ReactElement|undefined
+}
+
+export const UserFormContextProvider = ({children}: ChildrenType):ReactElement => {
+    return(
+        <UserFormContext.Provider value={useUserFormContext(initState)}>
+            {children}
+        </UserFormContext.Provider>
+    )
+}

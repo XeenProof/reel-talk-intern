@@ -1,13 +1,13 @@
 import React, {useContext} from "react";
 import {AiOutlineSearch} from "react-icons/ai"
-import UserFormContext from "../context/UserForm";
+import { UserFormContext } from "../context/UserForm";
 
 const Navbar:React.FC = () => {
-    const state = useContext(UserFormContext);
+    const {state, updateField} = useContext(UserFormContext);
 
     const handleClick = (text:string) => {
+        updateField("display_name", text);
         console.log(state);
-        
     }
 
     return <div id='navbar'>
@@ -22,7 +22,7 @@ const Navbar:React.FC = () => {
             </div>
             <div className='btn-group'>
                 <AiOutlineSearch className="btn"/>
-                <input type="search" id="search" name="search" placeholder={`Search..${state.counter}`}/>
+                <input type="search" id="search" name="search" placeholder={`Search..${state.display_name}`}/>
             </div>
             <div className='btn-group'>
                 <button className='btn' type='button' onClick={()=>{handleClick('Browse')}}>
