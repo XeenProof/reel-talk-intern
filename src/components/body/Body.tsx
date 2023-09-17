@@ -8,7 +8,7 @@ import ProcessBarSVG from "./ProgressBar/ProcessBarSVG";
 const Body:React.FC = () => {
     return <div id="body">
         
-            <ProcessBar current={5} total={6}/>
+            <ProcessBarV2 current={5} total={6}/>
         
     </div>
 }

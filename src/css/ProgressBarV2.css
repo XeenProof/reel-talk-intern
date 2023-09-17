@@ -1,42 +1,49 @@
+.one, .two, .three{
+  position:absolute;
+margin-top:-10px;
+z-index:1;
+height:40px;
+width:40px;
+border-radius:25px;
+}
+.one{
+left:25%;
+}
+.two{
+left:50%;
+}
+.three{
+left:75%;
+}
+.primary-color{
+background-color:#4989bd;
+}
+.success-color{
+background-color:#5cb85c;
+}
+.danger-color{
+background-color:#d9534f;
+}
+.warning-color{
+background-color:#f0ad4e;
+}
+.info-color{
+background-color:#5bc0de;
+}
+.no-color{
+background-color:inherit;
+}
 
-  ul.milestone-bar {
-    padding: 0;
-    margin: 0 0 15px 0;
-    display: flex;
-  }
-  ul.milestone-bar li {
-    width: 100%;
-    list-style: none;
-    display: flex;
-  }
-  ul.milestone-bar li a {
-    width: 60px;
-    height: 60px;
-    font-size: 10px;
-    border-radius: 50%;
-    background-color: red;
-    text-align: center;
-    line-height: 60px;
-  }
-  ul.milestone-bar li a:hover {
-    background: none;
-    border: 4px solid blue;
-    line-height: 52px;
-  }
-  ul.milestone-bar li a:active {
-    background-color: darkblue;
-  }
-  ul.milestone-bar li a:focus {
-    background-color: green;
-  }
-  ul.milestone-bar li .project-progress {
-    background-color: #d3d3d3;
-    display: inline-block;
-    margin: 0;
-    flex: 1;
-    align-self: center
-  }
-  ul.milestone-bar li .project-progress .progress-bar {
-      background: #0095FF;
-      text-align: center;
-  }
+.progress{
+  background-color: #4989bd;
+}
+
+.progress-bar{
+  background-color: #d9534f;
+}
+
+.container{
+  width:70%;
+  position: relative;
+  margin: auto;
+}

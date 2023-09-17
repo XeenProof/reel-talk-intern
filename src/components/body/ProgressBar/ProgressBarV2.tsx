@@ -20,40 +20,18 @@ const ProcessBarV2:React.FC<PBProps> = ({bgcolor, current, total}:PBProps) =>{
     }
 
     return (
-        <div className="panel panel-default">
-  <div className="panel-heading">
-    <div className="panel-title">Project Milestones</div>
-  </div>
-  <div className="panel-body">
-    <ul className="milestone-bar">
-      <li>
-        <div className="progress project-progress">
-          <div className="progress-bar" style={{width:'100%'}}>
-            100%
-          </div>
-        </div>
-        <a href="/projects/24?milestone=18">Milestone 1</a>
-      </li>
-
-      <li>
-        <div className="progress project-progress">
-          <div className="progress-bar" style={{width:'100%'}}>
-            100%
-          </div>
-        </div>
-        <a href="/projects/24?milestone=39">Milestone 3</a>
-      </li>
-
-      <li>
-        <div className="progress project-progress">
-          <div className="progress-bar" style={{width:'50%'}}>
-            50%
-          </div>
-        </div>
-        <a href="/projects/24?milestone=48">Milestone 2</a>
-      </li>
-    </ul>
-  </div>
+        <div className="container">
+	<div className="row"><br/>
+		<div className="col-md-12">
+    	<div className="progress">
+            <div className="one primary-color"></div>
+            <div className="two primary-color"></div>
+            <div className="three primary-color"></div>
+  			<div className="progress-bar" style={{width: '70%'}}>bar</div>
+		</div>
+      
+	  </div>
+	</div>
 </div>
       );
 }
