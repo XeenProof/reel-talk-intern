@@ -1,0 +1,11 @@
+
+
+#process-bar-v3{
+    width: 772px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.color1{
+    background-color: blue;
+}
