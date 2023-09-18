@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import {AiOutlineSearch} from "react-icons/ai"
-import { UserFormContext } from "../context/UserForm";
+import { UserFormContext } from "../../context/UserForm";
 
 const Navbar:React.FC = () => {
     const {state, updateField} = useContext(UserFormContext);

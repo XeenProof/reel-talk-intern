@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 import Body from "./body/Body";
 
 interface ReelTalkProps{
