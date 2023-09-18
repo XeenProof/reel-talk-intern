@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import ProgressNode from "./ProgressNode";
+
 
 interface ProgressNodesProps{
     current: number
@@ -14,7 +15,7 @@ const ProgressNodes:React.FC<ProgressNodesProps> = (props:ProgressNodesProps) =>
         <div className='process-nodes cover'>
             {Array(total).fill(null).map(
                 (_, index)=>{
-                    return <ProgressNode current={current} index={index+1}/>
+                    return <ProgressNode current={current} index={index}/>
                 }
             )}
         </div>

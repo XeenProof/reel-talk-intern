@@ -4,7 +4,7 @@ interface RTButtonProps{
     id: string,
     design: RTButtonDesigns,
     children: ReactElement|string,
-    onClick?: () => {},
+    onClick?: () => void,
     style?: CSSProperties
 }
 
