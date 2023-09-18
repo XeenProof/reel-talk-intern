@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 
 interface NavbarButtonProps{
-    onClick?: () => {},
+    onClick?: () => void,
     children: ReactElement|string
 }
 

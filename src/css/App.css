@@ -47,6 +47,10 @@
   align-items: center;
 }
 
+.circle{
+  border-radius: 100%;
+}
+
 .btn-group{
   position: relative;
   display:flex;
@@ -112,12 +116,23 @@
   margin-left: 3px;
 }
 
-.logo{
+.logo, .profile{
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
-  
+}
+
+.profile-image{
+  width: 32px;
+  height: 32px;
+}
+
+.profile-down{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 2px;
+  margin-left: 10px;
 }
 
 
