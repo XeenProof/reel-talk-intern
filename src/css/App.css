@@ -2,6 +2,7 @@
   --background-color: #222222;
   --pure-white: #FFFFFF;
   --primary-color: #FFA724;
+  --secondary: #222222;
   --grey: #6D6D6D;
 
   font-family: 'Avenir Next Variable' !important;
@@ -47,6 +48,7 @@
 }
 
 .btn-group{
+  position: relative;
   display:flex;
   justify-content: center;
   width: fit-content;
@@ -56,8 +58,9 @@
 
 .btn{
   margin: 3px;
-  font-family: "Avenir Next";
-  font-size: large;
+  font-family: 'Avenir Next Variable';
+  font-size: 16px;
+  color: var(--secondary);
   border: 0px;
   padding: 7px;
   color: var(--background-color);
@@ -67,7 +70,7 @@
 #search{
   border: 0px;
   width: 95%;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next Variable';
   font-size: large;
   margin: 3px;
   padding: 7px;
@@ -89,6 +92,32 @@
   margin-right: auto;
   justify-content: center;
   display: flex;
+}
+
+.logo-image{
+  width: 24px;
+  height: 26px;
+}
+
+.logo-text{
+  color: var(--secondary);
+  text-align: center;
+  font-family: 'Avenir Next Variable';
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.34px;
+  padding-top: 2px;
+  margin-left: 3px;
+}
+
+.logo{
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  
 }
 
 

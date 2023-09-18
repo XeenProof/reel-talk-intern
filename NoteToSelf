@@ -2,3 +2,12 @@ https://bootsnipp.com/snippets/EKr4D
 
 https://www.youtube.com/watch?v=05ZM4ymK9Nc
 
+/* image 38 */
+
+position: absolute;
+width: 24px;
+height: 26px;
+left: 16px;
+top: 5.5px;
+
+background: url(image);
