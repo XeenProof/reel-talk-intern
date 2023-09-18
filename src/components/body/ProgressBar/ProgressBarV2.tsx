@@ -8,18 +8,8 @@ interface PBProps{
 }
 
 const ProcessBarV2:React.FC<PBProps> = ({bgcolor, current, total}:PBProps) =>{
-    const percent = current/total*100;
-    const {state, updateField} = useContext(UserFormContext);
-
-    const fillerStyle = {
-        width:`${percent}%`
-    }
-
-    const renderMarkers = (index:number) => {
-        const percent = index/(total-1)*100;
-        const style = {left:`${percent}%`}
-        return <div className="marker" style={style}></div>
-    }
+    //const percent = current/total*100;
+    const {state} = useContext(UserFormContext);
 
     return (
         <div className="container">
