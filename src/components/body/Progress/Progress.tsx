@@ -1,10 +1,18 @@
 import React from "react";
+import ProgressBar from "./ProgressBar";
+import ProgressNodes from "./ProgressNodes";
 
-const Progress:React.FC = () => {
+export interface ProgressProps{
+    current: number;
+    total: number;
+}
 
+const Progress:React.FC<ProgressProps> = (props:ProgressProps) => {
+    const { current, total } = props;
 
-    return (<div id='process-bar-v3' className="center color1">
-        
+    return (<div id='process' className="process center">
+        <ProgressBar current={current} total={total}/>
+        <ProgressNodes current={current} total={total}/>
     </div>)
 }
 

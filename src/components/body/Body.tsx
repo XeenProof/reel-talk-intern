@@ -8,7 +8,7 @@ import Progress from "./Progress/Progress";
 const Body:React.FC = () => {
     return <div id="body">
         <ProcessBarV2 current={5} total={6}/>
-        <Progress/>
+        <Progress current={5} total={6}/>
         <BodyContent/>
     </div>
 }
