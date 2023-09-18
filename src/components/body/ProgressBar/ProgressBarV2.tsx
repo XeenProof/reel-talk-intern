@@ -20,8 +20,7 @@ const ProcessBarV2:React.FC<PBProps> = ({bgcolor, current, total}:PBProps) =>{
             <div className="two primary-color"></div>
             <div className="three primary-color"></div>
   			<div className="progress-bar" style={{width: '70%'}}>{state.display_name}</div>
-		</div>
-      
+		  </div>
 	  </div>
 	</div>
 </div>
