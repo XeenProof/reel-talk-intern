@@ -1,6 +1,5 @@
 import React from 'react';
 import './css/App.css';
-import './css/ProgressBarV2.css'
 import './css/Progress.css'
 import './css/Buttons.css'
 import ReelTalk from './components/ReelTalk';
