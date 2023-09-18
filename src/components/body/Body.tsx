@@ -1,7 +1,5 @@
 import React from "react";
-import ProcessBar from "./ProgressBar/ProcessBar";
 import ProcessBarV2 from "./ProgressBar/ProgressBarV2";
-import ProcessBarSVG from "./ProgressBar/ProcessBarSVG";
 
 
 
