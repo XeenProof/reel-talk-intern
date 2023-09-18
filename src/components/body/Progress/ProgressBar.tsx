@@ -1,9 +1,11 @@
 import React from "react";
-import { ProgressProps } from "./Progress";
 
+export interface ProgressBarProps{
+    current: number;
+    total: number;
+}
 
-
-const ProgressBar:React.FC<ProgressProps>= (props:ProgressProps) => {
+const ProgressBar:React.FC<ProgressBarProps>= (props:ProgressBarProps) => {
     const { current, total } = props;
     const percent = current/total*100;
 

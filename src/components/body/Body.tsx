@@ -6,7 +6,7 @@ import Progress from "./Progress/Progress";
 
 const Body:React.FC = () => {
     return <div id="body">
-        <Progress current={5} total={6}/>
+        <Progress current={5} total={6} className="progress-position"/>
         <BodyContent/>
     </div>
 }
