@@ -8,12 +8,10 @@ interface RTButtonProps{
 }
 
 const RTButton:React.FC<RTButtonProps> = (props:RTButtonProps) => {
-    const {id, className, children, onClick} = props;
+    const {id, className, children, onClick=()=>{console.log("none assigned")}} = props;
 
     return(
-        <button id={id} className={className} onClick={(onClick)?onClick:()=>{
-            console.log("none assigned")
-        }}>
+        <button id={id} className={className} onClick={onClick}>
             {children}
         </button>
     )
