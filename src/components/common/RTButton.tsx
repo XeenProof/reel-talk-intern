@@ -1,10 +1,11 @@
-import React, { ReactElement } from 'react';
+import React, { CSSProperties, ReactElement } from 'react';
 
 interface RTButtonProps{
     id: string,
-    style: RTButtonDesigns,
-    children: ReactElement|string
-    onClick?: () => {}
+    design: RTButtonDesigns,
+    children: ReactElement|string,
+    onClick?: () => {},
+    style?: CSSProperties
 }
 
 export enum RTButtonDesigns{
@@ -15,10 +16,15 @@ export enum RTButtonDesigns{
 }
 
 const RTButton:React.FC<RTButtonProps> = (props:RTButtonProps) => {
-    const {id, style, children, onClick=()=>{console.log("none assigned")}} = props;
+    const {id, 
+        design, 
+        children, 
+        onClick=()=>{console.log("none assigned", children)}, 
+        style={}}
+         = props;
 
     return(
-        <button id={id} className={style} onClick={onClick}>
+        <button id={id} className={design} onClick={onClick} style={style}>
             {children}
         </button>
     )
