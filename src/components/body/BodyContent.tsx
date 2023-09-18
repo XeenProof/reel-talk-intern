@@ -1,5 +1,5 @@
 import React from 'react';
-import RTButton from '../parts/RTButton';
+import RTButton from '../common/RTButton';
 
 const BodyContent:React.FC = () => {
     return(
