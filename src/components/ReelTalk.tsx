@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import ProcessBar from "./body/ProgressBar/ProcessBar";
 import Body from "./body/Body";
 
 interface ReelTalkProps{

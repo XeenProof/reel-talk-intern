@@ -1,0 +1,35 @@
+
+
+.button-primary, .button-secondary, .button-disabled, .button-social{
+    width: 256px;
+    height: 48px;
+    border-radius: 8px;
+    border: 2px;
+    padding: 10px;
+    
+    font-size: 20px;
+    margin: 10px;
+}
+.button-disabled, .button-social{
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--grey);
+}
+
+.button-social{
+    background-color: transparent;
+    color: var(--pure-white);
+}
+
+.button-disabled{
+    background-color: var(--grey);
+    color: rgba(255,255,255,0.38);
+}
+
+.button-primary{
+    background-color: var(--primary-color);
+}
+
+.button-secondary{
+    background-color: var(--pure-white);
+}
