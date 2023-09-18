@@ -25,7 +25,7 @@ const Navbar:React.FC = () => {
                 <input type="search" id="search" name="search" placeholder={`Search..${state.display_name}`}/>
             </div>
             <div className='btn-group'>
-                <NavbarButton>WatchList</NavbarButton>
+                <NavbarButton>Watchlist</NavbarButton>
             </div>
         </div>
     </div>
