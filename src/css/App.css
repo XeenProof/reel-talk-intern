@@ -425,3 +425,87 @@ input[type=number] {
 .draggable-active{
   cursor: grabbing;
 }
+.genre-display{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 24px;
+  width: 494px;
+  padding: 64px;
+}
+
+.genre-text{
+  width: 504px;
+  color: var(--Pure-White, #FFF);
+  text-align: center;
+
+  /* Web/H2 */
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+}
+
+.genre-card, .genre-card-active{
+  display: flex;
+  width: 154px;
+  height: 22px;
+  padding: 12px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: solid 2px;
+
+  color: var(--Secondary-Color, #222);
+  /* Web/Body Bold */
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.00px;
+
+  justify-content: space-between;
+}
+
+.genre-card{
+  background-color: white;
+}
+
+.genre-card-active{
+  background-color: var(--primary-color);
+}
+
+.genre-card-checkbox{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.expand-text{
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
+  /* Web/Body Bold */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.08px;
+}
+
+.expand-button{
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.expand-button:hover{
+  cursor: default;
+  text-decoration: underline;
+}
+
+.expand-icon{
+  width: 20px;
+  height:20px;
+}

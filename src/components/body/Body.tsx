@@ -4,6 +4,7 @@ import Progress from "./Progress/Progress";
 import { UserFormContext } from "../../context/UserFormContext";
 import ProfileDisplay from "./ProfileDisplay/ProfileDisplay";
 import Birthday from "./Birthday/Birthday";
+import GenreSelect from "./Genre/Genre";
 
 
 
@@ -17,6 +18,8 @@ const Body:React.FC = () => {
                 return <ProfileDisplay/>
             case 2:
                 return <Birthday/>
+            case 3:
+                return <GenreSelect/>
             default:
                 return <BodyContent/>
         }

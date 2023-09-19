@@ -49,7 +49,7 @@ const useQueryContext = (initState:StateType) => {
     const queryGenre = useCallback((requery:boolean = false) => {
         if(requery || state.genres.length === 0){
             let value = apis.getAllGenres();
-            let payload = {key:"movies", value:value};
+            let payload = {key:"genres", value:value};
             dispatch({
                 type: REDUCER_ACTION_TYPE.UPDATE_FIELD,
                 payload: payload

@@ -62,16 +62,11 @@
         },
         {
             "id":12,
-            "genre":"Horror",
-            "icon": "🧟"
-        },
-        {
-            "id":13,
             "genre":"Mystery",
             "icon": "🔎"
         },
         {
-            "id":14,
+            "id":13,
             "genre":"Reality-TV",
             "icon": "🌎"
         },

@@ -8,5 +8,6 @@ export interface Movie{
 export interface Genre{
     id:number,
     genre:string,
-    icon:string
+    icon:string,
+    selected?:boolean
 }
