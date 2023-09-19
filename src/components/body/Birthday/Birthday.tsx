@@ -8,7 +8,7 @@ import { RTButtonDesigns } from '../../common/RTButton';
 const Birthday:React.FC = () => {
     const {state} = useContext(UserFormContext)
 
-    const disabled:boolean = (state.DoBDay === undefined || state.DoBMonth === undefined || state.DoBYear === undefined)
+    const disabled:boolean = (state.DoBDay === undefined || state.DoBMonth === undefined || state.DoBYear === undefined)&&false
 
     return (
     <div className='birthday-holder vertical-display'>
