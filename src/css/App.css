@@ -138,7 +138,10 @@
 
 .profile-display{
   width: 600px;
-  background-color: red;
+
+}
+
+.vertical-display{
   display: flex;
   flex-direction: column;
 }

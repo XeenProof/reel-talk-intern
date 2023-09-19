@@ -3,7 +3,7 @@ import Progression from "../Progression/Progression";
 
 const ProfileDisplay:React.FC = () => {
     return(
-    <div className='center profile-display'>
+    <div className='center profile-display vertical-display'>
         <div className="profile-title">
             Customize your profile
         </div>
