@@ -12,9 +12,25 @@
   font-family: 'Avenir Next Variable' !important;
 }
 
+*{
+  font-family: 'Avenir Next Variable';
+}
+
 @font-face {
   font-family: 'Avenir Next Variable';
   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2729/AvenirNext_Variable.ttf') format('truetype');
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 #root{
@@ -256,12 +272,18 @@
   line-height: normal;
   letter-spacing: 0.08px;
 }
+.birthday-holder{
+  display:flex;
+  justify-content: space-between;
+  gap: 80px;
+}
 
 .birthday-main{
   width: 1166px;
   height: 295px;
   display: flex;
   justify-content: space-between;
+  gap: 64px;
 }
 
 .birthday-movie{
@@ -282,9 +304,98 @@
   font-family: 'Avenir Next Variable';
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: 0.1px;
+}
+
+.birthday-fields{
+  width: 572px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.birthday-fields-text-holder{
+  color: white;
+  text-align: right;
+  align-items: end;
+  justify-content: end;
+  justify-items: end;
+}
+
+.birthday-fields-header{
+  /* Web/H2 */
+  font-size: 36px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.54px;
+}
+
+.birthday-field-text{
+  width: 443px;
+  float: right;
+  opacity: 0.92;
+  padding-top: 10px;
+  margin: 0px;
+
+  color: rgba(255, 255, 255, 0.92);
+  text-align: right;
+
+  /* Web/Subheadline */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.07px;
+}
+
+.birthday-inputs{
+
+}
+
+.birthday-input-full{
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+  width: 99px;
+  height: 109px;
+}
+
+.birthday-input-text{
+  color: rgba(255, 255, 255, 0.92);
+
+  /* Web/Subheadline */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.07px;
+
+  text-align: center;
+}
+
+.birthday-input{
+  display: flex;
+  height: 42px;
+  padding: 1px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+
+  border-radius: 4px;
+  background: var(--surface-2nd-surface, linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%), #222);
+
+  color: var(--Disabled, rgba(255, 255, 255, 0.38));
+  /* Web/Body Bold */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.08px;
 }
 
 .movie-carousel{

@@ -7,7 +7,7 @@ const BirthdayMovies:React.FC = () => {
 
     return (<div className='birthday-movie'>
         <div className='birthday-movie-text center'>
-            We love our birthday movies
+            We love our birthday movies 🎉
         </div>
         <MovieCarousel movies={queryMovie()}/>
     </div>)
