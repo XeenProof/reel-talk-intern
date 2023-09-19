@@ -23,8 +23,13 @@ const RTButton:React.FC<RTButtonProps> = (props:RTButtonProps) => {
         style={}}
          = props;
 
+    const handleClick = ():void => {
+        if(design === RTButtonDesigns.DISABLED){return;}
+        onClick();
+    }
+
     return(
-        <button id={id} className={design} onClick={onClick} style={style}>
+        <button id={id} className={design} onClick={handleClick} style={style}>
             {children}
         </button>
     )

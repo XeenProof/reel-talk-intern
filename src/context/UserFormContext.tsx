@@ -7,9 +7,9 @@ type StateType = {
     location: string;
     description: string;
 
-    DoBMonth: number;
-    DoBDay: number;
-    DoBYear: number;
+    DoBMonth?: number;
+    DoBDay?: number;
+    DoBYear?: number;
 
     GenreId: number[];
     MovieId: number[];
@@ -22,9 +22,9 @@ const initState:StateType = {
     location: '',
     description: '',
 
-    DoBMonth: 1,
-    DoBDay: 1,
-    DoBYear: 2001,
+    // DoBMonth: 1,
+    // DoBDay: 1,
+    // DoBYear: 2001,
 
     GenreId: [],
     MovieId: []
