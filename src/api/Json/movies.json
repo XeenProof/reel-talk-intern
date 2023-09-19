@@ -35,6 +35,30 @@
             "name":"Placeholder Movie 5",
             "genre":[-1],
             "image":"/images/PlaceholderMovie.png"
+        },
+        {
+            "id":6,
+            "name":"Placeholder Movie 6",
+            "genre":[-1],
+            "image":"/images/PlaceholderMovie.png"
+        },
+        {
+            "id":7,
+            "name":"Placeholder Movie 7",
+            "genre":[-1],
+            "image":"/images/PlaceholderMovie.png"
+        },
+        {
+            "id":8,
+            "name":"Placeholder Movie 8",
+            "genre":[-1],
+            "image":"/images/PlaceholderMovie.png"
+        },
+        {
+            "id":9,
+            "name":"Placeholder Movie 9",
+            "genre":[-1],
+            "image":"/images/PlaceholderMovie.png"
         }
     ]
 }
