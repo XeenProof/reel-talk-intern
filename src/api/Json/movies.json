@@ -1,0 +1,40 @@
+{
+    "movies":[
+        {
+            "id":0,
+            "name":"Placeholder Movie 0",
+            "genre":[-1],
+            "image":"/images/PlaceholderMovie.png"
+        },
+        {
+            "id":1,
+            "name":"Placeholder Movie 1",
+            "genre":[],
+            "image":"/images/PlaceholderMovie.png"
+        },
+        {
+            "id":2,
+            "name":"Placeholder Movie 2",
+            "genre":[-1],
+            "image":"/images/PlaceholderMovie.png"
+        },
+        {
+            "id":3,
+            "name":"Placeholder Movie 3",
+            "genre":[-1],
+            "image":"/images/PlaceholderMovie.png"
+        },
+        {
+            "id":4,
+            "name":"Placeholder Movie 4",
+            "genre":[-1],
+            "image":"/images/PlaceholderMovie.png"
+        },
+        {
+            "id":5,
+            "name":"Placeholder Movie 5",
+            "genre":[-1],
+            "image":"/images/PlaceholderMovie.png"
+        }
+    ]
+}
