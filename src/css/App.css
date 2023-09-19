@@ -138,7 +138,11 @@
 
 .profile-display{
   width: 600px;
+}
 
+.horizontal-display{
+  display: flex;
+  flex-direction: row;
 }
 
 .vertical-display{
@@ -164,6 +168,30 @@
   font-weight: 400;
 }
 
+.profile-box-main{
+  background-color: red;
+  width: 395px;
+}
+
+.profile-box-top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-image-large{
+  width: 112px;
+  height: 112px;
+}
+
+.profile-add-image{
+  position: absolute;
+  bottom: 0px;
+  right: 6px;
+  background-color: white;
+  height: 24px;
+  width: 24px;
+}
 
 
 
