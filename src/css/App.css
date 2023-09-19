@@ -6,6 +6,9 @@
   --grey: #6D6D6D;
   --medium: #ffffff99;
 
+  --search-background: #00000014;
+  --search-text:#6d6d6d80;
+
   font-family: 'Avenir Next Variable' !important;
 }
 
@@ -70,15 +73,6 @@
   padding: 7px;
   color: var(--background-color);
   background-color: transparent;
-}
-
-#search{
-  border: 0px;
-  width: 95%;
-  font-family: 'Avenir Next Variable';
-  font-size: large;
-  margin: 3px;
-  padding: 7px;
 }
 
 .btn:hover{

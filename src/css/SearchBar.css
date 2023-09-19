@@ -1,0 +1,37 @@
+
+
+#search{
+    border: 0px;
+    width: 95%;
+    font-family: 'Avenir Next Variable';
+    font-size: large;
+    margin: 3px;
+
+    background-color: var(--search-background);
+    border-radius: 8px;
+    color: var(--search-text);
+
+    position: relative;
+    display: flex;
+}
+
+.search-icon{
+    width: 16px;
+    height: 16px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.search-input{
+    height: 100%;
+    width:100%;
+    border-radius: 8px;
+    color: var(--search-text);
+    background-color: transparent;
+    border-color: transparent;
+
+    font-family: 'Avenir Next Variable';
+    font-size: 16px;
+}

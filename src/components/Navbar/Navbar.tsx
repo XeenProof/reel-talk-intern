@@ -1,9 +1,9 @@
 import React, {useContext} from "react";
-import {AiOutlineSearch} from "react-icons/ai"
 import { UserFormContext } from "../../context/UserForm";
 import NavbarButton from "./NavbarButton";
 import NavbarLogo from "./NavbarLogo";
 import NavbarProfile from "./NavbarProfile";
+import SearchBar from "./SearchBar/SearchBar";
 
 const Navbar:React.FC = () => {
     const {state, updateField} = useContext(UserFormContext);
@@ -22,8 +22,8 @@ const Navbar:React.FC = () => {
                 <NavbarButton onClick={()=>{handleClick("Community")}}>Community</NavbarButton>
             </div>
             <div className='btn-group'>
-                <AiOutlineSearch className="btn"/>
-                <input type="search" id="search" name="search" placeholder={`Search..${state.display_name}`}/>
+                <SearchBar/>
+                {/* <input type="search" id="search" name="search" placeholder={`Search..${state.display_name}`}/> */}
             </div>
             <div onClick={()=>{handleClick("Watchlist")}} className='btn-group'>
                 <NavbarButton>Watchlist</NavbarButton>

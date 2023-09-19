@@ -16,6 +16,10 @@
     border-color: var(--grey);
 }
 
+.button-primary:hover, .button-secondary:hover, .button-social:hover{
+    text-decoration: underline;
+}
+
 .button-social{
     background-color: transparent;
     color: var(--pure-white);
