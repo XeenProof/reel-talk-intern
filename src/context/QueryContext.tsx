@@ -1,9 +1,9 @@
-import { useCallback, useReducer } from "react"
-import { movie } from "../api/apiFormats"
+import { ReactElement, createContext, useCallback, useReducer } from "react"
+import { Movie } from "../api/apiFormats"
 import apis from "../api/api"
 
 type StateType = {
-    movies: movie[]
+    movies: Movie[]
 }
 
 const initState:StateType = {
@@ -33,15 +33,36 @@ const useQueryContext = (initState:StateType) => {
     const [state, dispatch] = useReducer(reducer, initState)
 
     const queryMovie = useCallback((requery:boolean) => {
-        let value = apis.getAllMovies();
-        let payload = {key:"movies", value:value};
-        dispatch({
-            type: REDUCER_ACTION_TYPE.UPDATE_FIELD,
-            payload: payload
-        })
-    }, [])
+        if(requery || state.movies.length === 0){
+            let value = apis.getAllMovies();
+            let payload = {key:"movies", value:value};
+            dispatch({
+                type: REDUCER_ACTION_TYPE.UPDATE_FIELD,
+                payload: payload
+            })
+        }
+        return state.movies;
+    }, [state.movies])
 
     return {state, queryMovie}
 }
 
 type QueryContextType = ReturnType<typeof useQueryContext>
+
+const initContextState: QueryContextType = {
+    state: initState,
+    queryMovie: (requery:boolean) => [],
+}
+
+export const QueryContext = createContext<QueryContextType>(initContextState);
+
+type ChildrenType = {
+    children?: ReactElement|undefined
+}
+
+export const QueryContextProvider = ({children}:ChildrenType):ReactElement => {
+    return (
+    <QueryContext.Provider value={useQueryContext(initState)}>
+        {children}
+    </QueryContext.Provider>)
+}
