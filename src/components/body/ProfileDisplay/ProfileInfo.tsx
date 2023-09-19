@@ -1,5 +1,6 @@
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, useContext } from "react";
 import RTTextInput from "../../common/RTTextInput";
+import { UserFormContext } from "../../../context/UserForm";
 
 const ProfileInfo:React.FC = () => {
     const sharedStyle:CSSProperties = {
@@ -27,9 +28,18 @@ const ProfileInfo:React.FC = () => {
         paddingLeft: '16px',
     }
 
+    const {state, updateField} = useContext(UserFormContext);
+
+
     return (<div className="profile-info">
-        <RTTextInput id='display-name' style={nameStyle}/>
-        <RTTextInput id='location' style={locationStyle}/>
+        <RTTextInput id='display-name' style={nameStyle} display={state.display_name}
+            defaultDisplay="Karl"
+            onChange={(s:string)=>{updateField("display_name", s)}}
+        />
+        <RTTextInput id='location' style={locationStyle} display={state.location}
+            defaultDisplay="Location"
+            onChange={(s:string)=>{updateField("location", s)}}
+        />
     </div>)
 }
 

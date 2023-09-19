@@ -2,6 +2,7 @@ import React from "react";
 import Progression from "../Progression/Progression";
 import ProfileIcon from "./ProfileIcon";
 import ProfileInfo from "./ProfileInfo";
+import ProfileDescription from "./ProfileDescription";
 
 const ProfileDisplay:React.FC = () => {
     return(
@@ -18,6 +19,7 @@ const ProfileDisplay:React.FC = () => {
                 <ProfileInfo/>
             </div>
         </div>
+        <ProfileDescription/>
         <Progression/>
     </div>
     )

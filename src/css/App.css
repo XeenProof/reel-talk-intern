@@ -170,7 +170,8 @@
 
 .profile-box-main{
   width: 395px;
-  margin: 64px;
+  margin: 40px;
+  margin-left: 80px;
 }
 
 .profile-box-top{
@@ -197,7 +198,6 @@
 
 .profile-info{
   background-color: transparent;
-  margin: 0px;
 }
 
 .rtinput-default, .rtinput-display{
@@ -206,7 +206,6 @@
 
 .rtinput-default{
   height: 45%;
-  width: 100%;
   float: right;
 
   background-color: transparent;
@@ -218,7 +217,6 @@
   float: right;
   color: white;
   height: 50%;
-  width: 100%;
   display: flex;
   justify-content: space-between;
 
@@ -233,6 +231,30 @@
   height: 16px;
   width: 16px;
   margin: 0px;
+}
+
+.description{
+  align-self: center;
+  display: flex;
+  width: 352px;
+  height: 150px;
+  padding: 13px;
+  align-items: center;
+
+  margin-bottom: 40px;
+
+  border-radius: 8px;
+  background: var(--surface-2nd-surface, linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%), #222);
+
+  color: var(--Disabled, rgba(255, 255, 255, 0.38));
+
+  /* Web/Body */
+  font-family: 'Avenir Next Variable';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.08px;
 }
 
 
