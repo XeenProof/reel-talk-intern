@@ -1,13 +1,15 @@
 import { ReactElement, createContext, useCallback, useReducer } from "react"
-import { Movie } from "../api/apiFormats"
+import { Genre, Movie } from "../api/apiFormats"
 import apis from "../api/api"
 
 type StateType = {
-    movies: Movie[]
+    movies: Movie[],
+    genres: Genre[]
 }
 
 const initState:StateType = {
-    movies: []
+    movies: [],
+    genres: []
 }
 
 const enum REDUCER_ACTION_TYPE{
@@ -44,7 +46,19 @@ const useQueryContext = (initState:StateType) => {
         return state.movies;
     }, [state.movies])
 
-    return {state, queryMovie}
+    const queryGenre = useCallback((requery:boolean = false) => {
+        if(requery || state.genres.length === 0){
+            let value = apis.getAllGenres();
+            let payload = {key:"movies", value:value};
+            dispatch({
+                type: REDUCER_ACTION_TYPE.UPDATE_FIELD,
+                payload: payload
+            })
+        }
+        return state.genres;
+    }, [state.genres])
+
+    return {state, queryMovie, queryGenre}
 }
 
 type QueryContextType = ReturnType<typeof useQueryContext>
@@ -52,6 +66,7 @@ type QueryContextType = ReturnType<typeof useQueryContext>
 const initContextState: QueryContextType = {
     state: initState,
     queryMovie: (requery?:boolean) => [],
+    queryGenre: (requery?:boolean) => [],
 }
 
 export const QueryContext = createContext<QueryContextType>(initContextState);

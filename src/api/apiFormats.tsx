@@ -4,3 +4,9 @@ export interface Movie{
     genre:number[],
     image:string
 }
+
+export interface Genre{
+    id:number,
+    genre:string,
+    icon:string
+}
