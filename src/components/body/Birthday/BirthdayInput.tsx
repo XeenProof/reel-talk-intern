@@ -15,7 +15,8 @@ const BirthdayInput:React.FC<BirthdayInputProps> = (props:BirthdayInputProps) =>
     const {updateField} = useContext(UserFormContext)
 
     const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
-        updateField(field, e.target.value)
+        let value = Math.max(min,Math.min(max, Number.parseInt(e.target.value)));
+        updateField(field, value)
     }
 
     return (
@@ -24,7 +25,7 @@ const BirthdayInput:React.FC<BirthdayInputProps> = (props:BirthdayInputProps) =>
                 {children}
             </div>
             <input type="number" min={min} max={max} className='birthday-input'
-                placeholder={placeholder} defaultValue={value} onChange={handleChange}
+                placeholder={placeholder} value={value} onChange={handleChange}
             />
         </div>
         
