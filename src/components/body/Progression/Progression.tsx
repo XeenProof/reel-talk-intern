@@ -6,11 +6,17 @@ interface ProgressionProps{
     nextText?: string,
     prevText?: string,
     nextFunc?: () => void,
-    prevFunc?: () => void
+    prevFunc?: () => void,
+    nextStyle?: RTButtonDesigns,
+    prevStyle?: RTButtonDesigns
 }
 
 const Progression:React.FC<ProgressionProps> = (props:ProgressionProps) => {
-    const {state, increment, decrement} = useContext(UserFormContext);
+    const {increment, decrement} = useContext(UserFormContext);
+    const {
+        nextStyle = RTButtonDesigns.PRIMARY,
+        prevStyle = RTButtonDesigns.SOCIAL
+    } = props
     
     const handleNext = () => {
         console.log("clicked");
@@ -22,14 +28,14 @@ const Progression:React.FC<ProgressionProps> = (props:ProgressionProps) => {
         decrement();
     }
 
-    const style:CSSProperties = {margin:'40px'}
+    const style:CSSProperties = {margin:'16px'}
 
     return (
     <div className='center'>
-        <RTButton id="b1" design={RTButtonDesigns.PRIMARY} style={style} onClick={handlePrev}>
+        <RTButton id="b1" design={prevStyle} style={style} onClick={handlePrev}>
             Back
         </RTButton>
-        <RTButton id="b2" design={RTButtonDesigns.SECONDARY} style={style} onClick={handleNext}>
+        <RTButton id="b2" design={nextStyle} style={style} onClick={handleNext}>
             Next
         </RTButton>
     </div>

@@ -136,6 +136,30 @@
   margin-left: 10px;
 }
 
+.profile-display{
+  width: 600px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-title, .profile-text{
+  width:100%;
+  color: white;
+  font-family: 'Avenir Next Variable';
+  text-align: center;
+  margin: 4px;
+}
+
+.profile-title{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.profile-text{
+  font-size: 16px;
+  font-weight: 400;
+}
 
 
 
