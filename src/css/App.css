@@ -1,8 +1,8 @@
 :root {
-  --background-color: #222222;
+  --secondary: #222222;
+  --background-color: var(--secondary, #222);
   --pure-white: #FFFFFF;
   --primary-color: #FFA724;
-  --secondary: #222222;
   --grey: #6D6D6D;
   --medium: #ffffff99;
 
@@ -257,4 +257,57 @@
   letter-spacing: 0.08px;
 }
 
+.birthday-main{
+  width: 1166px;
+  height: 295px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.birthday-movie{
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+
+  width: 445px;
+  height: 100%;
+}
+
+.birthday-movie-text{
+  padding: 20px;
+  color: white;
+  opacity: 0.92;
+  text-align: center;
+
+  /* Web/Headline */
+  font-family: 'Avenir Next Variable';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.movie-carousel{
+  max-width: 100%;
+  overflow: auto;
+  margin: 12px;
+}
+
+.movie-carousel::-webkit-scrollbar{
+  display:none;
+}
+
+.movie-image{
+  width: 105px;
+  height: 159px;
+  flex-shrink: 0;
+  margin: 6px;
+}
+
+.draggable{
+  cursor: grab;
+}
+
+.draggable-active{
+  cursor: grabbing;
+}

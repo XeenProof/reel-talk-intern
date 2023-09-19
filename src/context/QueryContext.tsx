@@ -32,7 +32,7 @@ const reducer = (state: StateType, action: ReducerAction): StateType => {
 const useQueryContext = (initState:StateType) => {
     const [state, dispatch] = useReducer(reducer, initState)
 
-    const queryMovie = useCallback((requery:boolean) => {
+    const queryMovie = useCallback((requery:boolean = false) => {
         if(requery || state.movies.length === 0){
             let value = apis.getAllMovies();
             let payload = {key:"movies", value:value};
@@ -51,7 +51,7 @@ type QueryContextType = ReturnType<typeof useQueryContext>
 
 const initContextState: QueryContextType = {
     state: initState,
-    queryMovie: (requery:boolean) => [],
+    queryMovie: (requery?:boolean) => [],
 }
 
 export const QueryContext = createContext<QueryContextType>(initContextState);

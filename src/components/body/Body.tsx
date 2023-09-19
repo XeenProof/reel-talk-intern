@@ -3,6 +3,7 @@ import BodyContent from "./BodyContent";
 import Progress from "./Progress/Progress";
 import { UserFormContext } from "../../context/UserFormContext";
 import ProfileDisplay from "./ProfileDisplay/ProfileDisplay";
+import Birthday from "./Birthday/Birthday";
 
 
 
@@ -14,6 +15,8 @@ const Body:React.FC = () => {
         switch(step){
             case 1:
                 return <ProfileDisplay/>
+            case 2:
+                return <Birthday/>
             default:
                 return <BodyContent/>
         }
