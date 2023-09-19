@@ -3,7 +3,7 @@ import Progression from "../Progression/Progression";
 import ProfileIcon from "./ProfileIcon";
 import ProfileInfo from "./ProfileInfo";
 import ProfileDescription from "./ProfileDescription";
-import { UserFormContext } from "../../../context/UserForm";
+import { UserFormContext } from "../../../context/UserFormContext";
 import { RTButtonDesigns } from "../../common/RTButton";
 
 const ProfileDisplay:React.FC = () => {

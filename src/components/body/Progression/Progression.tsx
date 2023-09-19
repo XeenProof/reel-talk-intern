@@ -1,6 +1,6 @@
 import React, { CSSProperties, useContext } from "react";
 import RTButton, { RTButtonDesigns } from "../../common/RTButton";
-import { UserFormContext } from "../../../context/UserForm";
+import { UserFormContext } from "../../../context/UserFormContext";
 
 interface ProgressionProps{
     nextText?: string,

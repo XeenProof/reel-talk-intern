@@ -1,6 +1,6 @@
 import React, { CSSProperties, useContext } from "react";
 import RTTextInput from "../../common/RTTextInput";
-import { UserFormContext } from "../../../context/UserForm";
+import { UserFormContext } from "../../../context/UserFormContext";
 
 const ProfileInfo:React.FC = () => {
     const sharedStyle:CSSProperties = {

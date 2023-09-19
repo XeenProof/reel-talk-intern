@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import { UserFormContext } from "../../context/UserForm";
+import { UserFormContext } from "../../context/UserFormContext";
 import NavbarButton from "./NavbarButton";
 import NavbarLogo from "./NavbarLogo";
 import NavbarProfile from "./NavbarProfile";

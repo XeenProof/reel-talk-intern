@@ -4,7 +4,7 @@ import './css/Progress.css'
 import './css/Buttons.css'
 import './css/SearchBar.css'
 import ReelTalk from './components/ReelTalk';
-import { UserFormContextProvider } from './context/UserForm';
+import { UserFormContextProvider } from './context/UserFormContext';
 
 function App() {
   return (
