@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Progression from "../Progression/Progression";
 import ProfileIcon from "./ProfileIcon";
 import ProfileInfo from "./ProfileInfo";
 import ProfileDescription from "./ProfileDescription";
+import { UserFormContext } from "../../../context/UserForm";
+import { RTButtonDesigns } from "../../common/RTButton";
 
 const ProfileDisplay:React.FC = () => {
+    const {state} = useContext(UserFormContext)
+
+    const isCompleted:boolean = !(state.description === '' || state.display_name === '' || state.location === '')
+
     return(
     <div className='center profile-display vertical-display'>
         <div className="profile-title">
@@ -20,7 +26,7 @@ const ProfileDisplay:React.FC = () => {
             </div>
         </div>
         <ProfileDescription/>
-        <Progression/>
+        <Progression nextText={isCompleted?"Next":"Skip"} nextStyle={(isCompleted)?RTButtonDesigns.PRIMARY:RTButtonDesigns.SOCIAL}/>
     </div>
     )
 }
