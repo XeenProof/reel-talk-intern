@@ -1,4 +1,4 @@
-import React, { CSSProperties, ReactElement, useState } from 'react';
+import React, { CSSProperties, useState } from 'react';
 import {BiPencil} from 'react-icons/bi'
 
 interface RTTextInputProps{
