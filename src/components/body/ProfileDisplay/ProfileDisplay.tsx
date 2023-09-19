@@ -1,6 +1,7 @@
 import React from "react";
 import Progression from "../Progression/Progression";
 import ProfileIcon from "./ProfileIcon";
+import ProfileInfo from "./ProfileInfo";
 
 const ProfileDisplay:React.FC = () => {
     return(
@@ -14,6 +15,7 @@ const ProfileDisplay:React.FC = () => {
         <div className="profile-box-main center">
             <div className="profile-box-top horizontal-display">
                 <ProfileIcon/>
+                <ProfileInfo/>
             </div>
         </div>
         <Progression/>

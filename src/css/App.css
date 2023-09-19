@@ -169,14 +169,16 @@
 }
 
 .profile-box-main{
-  background-color: red;
   width: 395px;
+  margin: 64px;
 }
 
 .profile-box-top{
   width: 100%;
+  height: 112px;
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .profile-image-large{
@@ -193,5 +195,44 @@
   width: 24px;
 }
 
+.profile-info{
+  background-color: transparent;
+  margin: 0px;
+}
+
+.rtinput-default, .rtinput-display{
+  font-family: 'Avenir Next Variable';
+}
+
+.rtinput-default{
+  height: 45%;
+  width: 100%;
+  float: right;
+
+  background-color: transparent;
+  border-width: 0px;
+  color: white;
+}
+
+.rtinput-display{
+  float: right;
+  color: white;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 12px;
+  margin-right: 0px;
+  margin: 0px;
+  align-items: center;
+}
+
+
+.input-icon{
+  height: 16px;
+  width: 16px;
+  margin: 0px;
+}
 
 
