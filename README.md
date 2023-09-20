@@ -1,4 +1,4 @@
-# Introduction
+# Introduction:
 
 This is a template bulid for the ideal reel talk website.
 
@@ -11,12 +11,23 @@ The following pages have been implemented:
     - I added a carousel style Brithday Movies list to the side
 - Genre Selection
 
+# Design Decisions:
+- I decided to just use react with no front-end libraries as a form of refresher on css.
+    - Normally I would have used a front-end framework
+- React-icons was the only library used to get the icons I needed
+- For this project, I decided that 2 Contexts would be enough:
+    - one for querying from database so I can cache what I queried easier
+    - one for storing user information so I don't have to prop chain
+- For the Object-oriented Data Structures, I decided to just use basic interfaces of Javascript.
+    - These are only in apiFormats right now
+    - If there's anything more complex, I would have considered making full classes so each object can manage itself (i.e validate itself, updating itself, more complex matching)
+
 # File Format:
-This describes everything inside the src, though the placeholder images are all in public/images
+This describes the format inside src, though the placeholder images are all in public/images
 
 ## api:
 The api folder would hold the direct connections to the end-points. 
-It also holds the object representation of the data collected
+It also holds the object representation of the data collected. 
 
 ## components:
 The components folder holds all the react components responsible for the UI side of things.
