@@ -11,7 +11,7 @@ The following pages have been implemented:
     - I added a carousel style Brithday Movies list to the side
 - Genre Selection
 
-# File format:
+# File Format:
 This describes everything inside the src, though the placeholder images are all in public/images
 
 ## api:
