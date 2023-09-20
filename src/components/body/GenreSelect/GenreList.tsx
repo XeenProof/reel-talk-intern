@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import GenreCheckbox from "./GenreCheckbox";
 import { QueryContext } from "../../../context/QueryContext";
 import { Genre } from "../../../api/apiFormats";

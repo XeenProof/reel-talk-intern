@@ -1,4 +1,4 @@
-import React, { ReactElement, useContext } from "react";
+import React, { useContext } from "react";
 import BodyContent from "./BodyContent";
 import Progress from "./Progress/Progress";
 import { UserFormContext } from "../../context/UserFormContext";
