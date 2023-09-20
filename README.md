@@ -12,6 +12,7 @@ The following pages have been implemented:
 - Genre Selection
 
 # Design Decisions:
+- Most Navbar features don't do anything yet as I don't have what they are supposed to do.
 - I decided to just use react with no front-end libraries as a form of refresher on css.
     - Normally I would have used a front-end framework
 - React-icons was the only library used to get the icons I needed
