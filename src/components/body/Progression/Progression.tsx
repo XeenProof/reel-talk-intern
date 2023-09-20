@@ -3,6 +3,7 @@ import RTButton, { RTButtonDesigns } from "../../common/RTButton";
 import { UserFormContext } from "../../../context/UserFormContext";
 
 interface ProgressionProps{
+    id:string,
     nextText?: string,
     prevText?: string,
     nextFunc?: () => void,
@@ -32,6 +33,7 @@ const Progression:React.FC<ProgressionProps> = (props:ProgressionProps) => {
     }
 
     const {
+        id,
         nextText = "Next",
         prevText = "Back",
         nextFunc = handleNext,
@@ -45,11 +47,11 @@ const Progression:React.FC<ProgressionProps> = (props:ProgressionProps) => {
     const style:CSSProperties = {margin:'16px'}
 
     return (
-    <div className='center'>
-        <RTButton id="b1" design={prevStyle} style={style} onClick={prevFunc}>
+    <div id={id} className='center'>
+        <RTButton id={`${id}-b1`} design={prevStyle} style={style} onClick={prevFunc}>
             {prevText}
         </RTButton>
-        <RTButton id="b2" design={nextStyle} style={style} onClick={nextFunc}>
+        <RTButton id={`${id}-b2`} design={nextStyle} style={style} onClick={nextFunc}>
             {nextText}
         </RTButton>
     </div>

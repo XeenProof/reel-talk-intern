@@ -8,8 +8,8 @@ import {BsChevronDown} from 'react-icons/bs'
  */
 const NavbarProfile:React.FC = () => {
     return (<div id='profile' className='profile'>
-            <img src='images/test.png' alt='logo192.png' className="profile-image circle"/>
-            <BsChevronDown className='profile-down'/>
+            <img id='profile-image' src='images/test.png' alt='logo192.png' className="profile-image circle"/>
+            <BsChevronDown id='profile-dropdown' className='profile-down'/>
         </div>)
 }
 

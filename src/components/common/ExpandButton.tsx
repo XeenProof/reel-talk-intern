@@ -2,6 +2,7 @@ import React from "react";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 
 interface ExpandButtonProps {
+    id:string,
     state:boolean,
     setState:React.Dispatch<React.SetStateAction<boolean>>
 }
@@ -21,7 +22,7 @@ const ExpandButton:React.FC<ExpandButtonProps> = (props:ExpandButtonProps) => {
         setState(!state)
     }
     
-    return <div className="expand-button horizontal-display center expand-text" onClick={handleClick}>
+    return <div id='genre-expand' className="expand-button horizontal-display center expand-text" onClick={handleClick}>
         <div className="expand-text">{text}</div>
         <Icon className="expand-icon"/>
     </div>

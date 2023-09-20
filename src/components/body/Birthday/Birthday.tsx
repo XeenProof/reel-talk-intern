@@ -15,12 +15,12 @@ const Birthday:React.FC = () => {
     const disabled:boolean = (state.DoBDay === undefined || state.DoBMonth === undefined || state.DoBYear === undefined)&&false
 
     return (
-    <div className='birthday-holder vertical-display'>
-        <div className='birthday-main center'>
+    <div id='birthday-page-main' className='birthday-holder vertical-display'>
+        <div id='birthday-page-content' className='birthday-main center'>
             <BirthdayFields/>
             <BirthdayMovies/>
         </div>
-        <Progression nextStyle={disabled?RTButtonDesigns.DISABLED:RTButtonDesigns.PRIMARY}/>
+        <Progression id='birthday-progression' nextStyle={disabled?RTButtonDesigns.DISABLED:RTButtonDesigns.PRIMARY}/>
     </div>)
 }
 

@@ -29,7 +29,7 @@ const GenreList:React.FC<GenreListProps> = (props:GenreListProps) => {
         }})
 
     return (
-        <div className="genre-display center">
+        <div id="genre-display-list" className="genre-display center">
             {
                 displayList.map((g:Genre)=>{return <GenreCheckbox genre={g}/>})
             }

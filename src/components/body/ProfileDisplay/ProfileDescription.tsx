@@ -15,7 +15,7 @@ const ProfileDescription:React.FC = () => {
     }
 
 
-    return <textarea className="description" defaultValue={state.description} placeholder={placeholderText}
+    return <textarea id='profile-description' className="description" defaultValue={state.description} placeholder={placeholderText}
         onChange={handleChange}
     />
 }

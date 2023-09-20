@@ -3,6 +3,7 @@ import { Movie } from '../../../api/apiFormats';
 import MovieBasic from './MovieBasic';
 
 interface MovieCarouselProps{
+    id: string,
     movies:Movie[]
 }
 
@@ -12,7 +13,7 @@ interface MovieCarouselProps{
  * @returns 
  */
 const MovieCarousel:React.FC<MovieCarouselProps> = (props:MovieCarouselProps) => {
-    const {movies} = props
+    const {id, movies} = props
     const scrollable = useRef<HTMLDivElement>(null);
 
     let isDown:boolean = false;
@@ -47,7 +48,7 @@ const MovieCarousel:React.FC<MovieCarouselProps> = (props:MovieCarouselProps) =>
     }
 
 
-    return <div className='movie-carousel horizontal-display'
+    return <div id={id} className='movie-carousel horizontal-display'
         ref={scrollable}
         onMouseDown={mouseDown}
         onMouseUp={mouseUp}

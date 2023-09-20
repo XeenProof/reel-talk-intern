@@ -5,6 +5,7 @@ import { Movie } from '../../../api/apiFormats';
 
 /**
  * Sets up the div element that holds the carousel itself
+ * Filters the movies list to birthday movies only
  * @returns The element holding the movie carousel
  */
 const BirthdayMovies:React.FC = () => {
@@ -16,7 +17,7 @@ const BirthdayMovies:React.FC = () => {
         <div className='birthday-movie-text center'>
             We love our birthday movies 🎉
         </div>
-        <MovieCarousel movies={brthdayMovies}/>
+        <MovieCarousel movies={brthdayMovies} id="birthday-movies"/>
     </div>)
 }
 

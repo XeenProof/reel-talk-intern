@@ -16,21 +16,21 @@ const ProfileDisplay:React.FC = () => {
     const isCompleted:boolean = !(state.description === '' || state.display_name === '' || state.location === '')
 
     return(
-    <div className='center profile-display vertical-display'>
-        <div className="profile-title">
+    <div id='profile-display-main' className='center profile-display vertical-display'>
+        <div id="profile-display-title" className="profile-title">
             Customize your profile
         </div>
-        <div className="profile-text">
+        <div id="profile-display-text" className="profile-text">
             Personalizing your profile will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.
         </div>
-        <div className="profile-box-main center">
-            <div className="profile-box-top horizontal-display">
+        <div id='profile-box-main' className="profile-box-main center">
+            <div id='profile-box-top' className="profile-box-top horizontal-display">
                 <ProfileIcon/>
                 <ProfileInfo/>
             </div>
         </div>
         <ProfileDescription/>
-        <Progression nextText={isCompleted?"Next":"Skip"} nextStyle={(isCompleted)?RTButtonDesigns.PRIMARY:RTButtonDesigns.SOCIAL}/>
+        <Progression nextText={isCompleted?"Next":"Skip"} nextStyle={(isCompleted)?RTButtonDesigns.PRIMARY:RTButtonDesigns.SOCIAL} id="profile-display-progression"/>
     </div>
     )
 }

@@ -39,7 +39,7 @@ const RTTextInput:React.FC<RTTextInputProps> = (props:RTTextInputProps) => {
         <input type={type} id={id} onChange={handleChange} autoFocus style={style} 
             className={className} onBlur={()=>{setEdit(false)}} defaultValue={display}
         />:
-        <div className='rtinput-display horizontal-display' style={style}>
+        <div id={id} className='rtinput-display horizontal-display' style={style}>
             <div className='horizontal-display'>{(display === '')?defaultDisplay:display}</div>
             <BiPencil  className="input-icon" onClick={()=>{setEdit(true)}}/>
         </div>

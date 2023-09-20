@@ -9,15 +9,15 @@ import Progression from './Progression/Progression';
 const BodyContent:React.FC = () => {
 
     return(
-        <div className='center vertical-display'>
-            <div className='center profile-display vertical-display'>
-                <div className="profile-title">
+        <div id='placeholder-main' className='center vertical-display'>
+            <div id='placeholder-text' className='center profile-display vertical-display'>
+                <div id='placeholder-text-1' className="profile-title">
                     Still in Development
                 </div>
-                <div className="profile-text">
+                <div id='placeholder-text-2' className="profile-text">
                     Using this page to display some random elements
                 </div>
-                <Progression/>
+                <Progression id={"placeholder"}/>
             </div>
             <div className='center'>
                 <RTButton id="b1" design={RTButtonDesigns.PRIMARY}>Next</RTButton>

@@ -35,7 +35,7 @@ const ProfileInfo:React.FC = () => {
     const {state, updateField} = useContext(UserFormContext);
 
 
-    return (<div className="profile-info">
+    return (<div id='profile-page-info' className="profile-info">
         <RTTextInput id='display-name' style={nameStyle} display={state.display_name}
             defaultDisplay="Karl"
             onChange={(s:string)=>{updateField("display_name", s)}}

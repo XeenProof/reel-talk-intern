@@ -29,7 +29,7 @@ const BirthdayInput:React.FC<BirthdayInputProps> = (props:BirthdayInputProps) =>
             <div className='birthday-input-text'>
                 {children}
             </div>
-            <input type="number" min={min} max={max} className='birthday-input'
+            <input id={field} type="number" min={min} max={max} className='birthday-input'
                 placeholder={placeholder} value={value} onChange={handleChange}
             />
         </div>

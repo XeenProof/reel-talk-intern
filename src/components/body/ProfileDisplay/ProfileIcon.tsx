@@ -8,7 +8,7 @@ import { BsPlus } from 'react-icons/bs';
 const ProfileIcon:React.FC = () => {
 
     return (
-        <div className='profile'>
+        <div id='profile-page-icon' className='profile'>
             <img src='images/test.png' alt='logo192.png' className="profile-image-large circle"/>
             <BsPlus className='profile-add-image circle'/>
         </div>)

@@ -10,17 +10,17 @@ const BirthdayFields:React.FC = () => {
     const {state} = useContext(UserFormContext)
 
     return (
-    <div className='birthday-fields vertical-display'>
-        <div className='birthday-fields-text-holder'>
-            <div className='birthday-fields-header horizontal-display'>
+    <div id='birthday-fields-main' className='birthday-fields vertical-display'>
+        <div id='birthday-text-holder' className='birthday-fields-text-holder'>
+            <div id='birthday-header' className='birthday-fields-header horizontal-display'>
                 <div style={{paddingTop:'6px'}}>Please provide your date of birth</div>
                 <div style={{fontWeight:"400"}}>🎂</div>
             </div>
-            <div className='birthday-field-text'>
+            <div id='birthday text' className='birthday-field-text'>
             Date of birth will allow us to tailor age-appropriate content and will not be shared with any third parties.
             </div>
         </div>
-        <div className='birthday-inputs horizontal-display'>
+        <div id='birthday-inputs' className='birthday-inputs horizontal-display'>
             <BirthdayInput placeholder={"MM"} min={1} max={12} field="DoBMonth" value={state.DoBMonth}>
                 Month
             </BirthdayInput>

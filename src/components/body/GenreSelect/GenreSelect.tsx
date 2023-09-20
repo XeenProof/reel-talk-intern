@@ -15,13 +15,13 @@ const GenreSelect:React.FC = () => {
     const canProceed:boolean = state.GenreId.length >= 3;
 
     return (
-        <div className="vertical-display center">
-            <div className="genre-text center">
+        <div id='genre-display-main' className="vertical-display center">
+            <div id="genre-display-title" className="genre-text center">
                 Select your top 3 genres for movies and TV
             </div>
             <GenreList display={expand?0:16}/>
-            <ExpandButton state={expand} setState={setExpand}/>
-            <Progression nextStyle={canProceed?RTButtonDesigns.PRIMARY:RTButtonDesigns.DISABLED}/>
+            <ExpandButton state={expand} setState={setExpand} id='genre-expand'/>
+            <Progression id='genre-select-progression' nextStyle={canProceed?RTButtonDesigns.PRIMARY:RTButtonDesigns.DISABLED}/>
         </div>
     )
 }
