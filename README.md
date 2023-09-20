@@ -21,7 +21,6 @@ The following pages have been implemented:
 - For the Object-oriented Data Structures, I decided to just use basic interfaces of Javascript.
     - These are only in apiFormats right now
     - If there's anything more complex, I would have considered making full classes so each object can manage itself (i.e validate itself, updating itself, more complex matching)
-- Right Now, the Next button still works even if disabled for easier debugging purposes
 
 # File Format:
 This describes the format inside src, though the placeholder images are all in public/images
