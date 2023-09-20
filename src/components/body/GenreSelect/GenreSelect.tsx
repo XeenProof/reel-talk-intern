@@ -5,6 +5,10 @@ import Progression from "../Progression/Progression";
 import { UserFormContext } from "../../../context/UserFormContext";
 import { RTButtonDesigns } from "../../common/RTButton";
 
+/**
+ * The main page foe the select 3 genre page
+ * @returns The genre page
+ */
 const GenreSelect:React.FC = () => {
     const [expand, setExpand] = useState<boolean>(false);
     const {state} = useContext(UserFormContext)

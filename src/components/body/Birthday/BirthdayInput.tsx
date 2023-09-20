@@ -10,6 +10,11 @@ interface BirthdayInputProps{
     field: string
 }
 
+/**
+ * Creates a single input field for birthday entry
+ * @param props The required info for the birthday field
+ * @returns A single number input field for birthdays
+ */
 const BirthdayInput:React.FC<BirthdayInputProps> = (props:BirthdayInputProps) => {
     const {children, min=0, max=9999, placeholder, value, field} = props;
     const {updateField} = useContext(UserFormContext)

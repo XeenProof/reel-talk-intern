@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
-import MovieCarousel from '../../common/MovieCarousel/MovieCarousel';
-import { QueryContext } from '../../../context/QueryContext';
 import BirthdayInput from './BirthdayInput';
 import { UserFormContext } from '../../../context/UserFormContext';
-import Progression from '../Progression/Progression';
 
+/**
+ * Creates the design and input fields of the birthday page
+ * @returns The field input side of the birthday page
+ */
 const BirthdayFields:React.FC = () => {
     const {state} = useContext(UserFormContext)
 

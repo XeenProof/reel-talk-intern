@@ -6,6 +6,11 @@ interface ReactCheckboxProps{
     genre:Genre
 }
 
+/**
+ * Create a genre card for the genre grid
+ * @param props Provides the information of one genre
+ * @returns One genre card for the entire genre list
+ */
 const GenreCheckbox:React.FC<ReactCheckboxProps> = (props:ReactCheckboxProps) => {
     const {state, updateField} = useContext(UserFormContext)
     const {selected, id, genre, icon} = props.genre

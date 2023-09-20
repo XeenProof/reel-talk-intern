@@ -5,6 +5,10 @@ import Progression from '../Progression/Progression';
 import { UserFormContext } from '../../../context/UserFormContext';
 import { RTButtonDesigns } from '../../common/RTButton';
 
+/**
+ * The main page for displaying the birthday page
+ * @returns The birthday inputs and the birthday movie carousel
+ */
 const Birthday:React.FC = () => {
     const {state} = useContext(UserFormContext)
 

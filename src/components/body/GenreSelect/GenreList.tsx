@@ -8,6 +8,12 @@ interface GenreListProps{
     display?:number
 }
 
+/**
+ * Creates a gird design for the genre cards
+ * Map and filters the genre list that is currently visible
+ * @param props The number of genres to display
+ * @returns The grid for displaying the genre cards
+ */
 const GenreList:React.FC<GenreListProps> = (props:GenreListProps) => {
     const { queryGenre } = useContext(QueryContext) 
     const {state} = useContext(UserFormContext)

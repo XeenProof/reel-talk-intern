@@ -1,6 +1,10 @@
 import React from 'react';
 import { BsPlus } from 'react-icons/bs';
 
+/**
+ * Creates the profile icon and the add button to the left of the page
+ * @returns The profile icon
+ */
 const ProfileIcon:React.FC = () => {
 
     return (

@@ -2,6 +2,10 @@ import React, { CSSProperties, useContext } from "react";
 import RTTextInput from "../../common/RTTextInput";
 import { UserFormContext } from "../../../context/UserFormContext";
 
+/**
+ * Creates the text inputs for the profile page using RTTextInput from commons
+ * @returns The display or edit more Text inputs
+ */
 const ProfileInfo:React.FC = () => {
     const sharedStyle:CSSProperties = {
         maxWidth: '259px',

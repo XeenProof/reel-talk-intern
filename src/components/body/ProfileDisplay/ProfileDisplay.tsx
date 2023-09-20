@@ -6,6 +6,10 @@ import ProfileDescription from "./ProfileDescription";
 import { UserFormContext } from "../../../context/UserFormContext";
 import { RTButtonDesigns } from "../../common/RTButton";
 
+/**
+ * The main display for the profile page
+ * @returns The profile page's unique contexts
+ */
 const ProfileDisplay:React.FC = () => {
     const {state} = useContext(UserFormContext)
 
