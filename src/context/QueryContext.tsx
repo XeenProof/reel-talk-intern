@@ -2,6 +2,11 @@ import { ReactElement, createContext, useCallback, useReducer } from "react"
 import { Genre, Movie } from "../api/apiFormats"
 import apis from "../api/api"
 
+/**
+ * The QueryConext is mean as an access point to the backend.
+ * It's only job is to query the required contents, since no mutations are needed
+ */
+
 type StateType = {
     movies: Movie[],
     genres: Genre[]

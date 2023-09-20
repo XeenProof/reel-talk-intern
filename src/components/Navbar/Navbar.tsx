@@ -3,7 +3,7 @@ import { UserFormContext } from "../../context/UserFormContext";
 import NavbarButton from "./NavbarButton";
 import NavbarLogo from "./NavbarLogo";
 import NavbarProfile from "./NavbarProfile";
-import SearchBar from "./SearchBar/SearchBar";
+import SearchBar from "./SearchBar";
 
 const Navbar:React.FC = () => {
     const {state, updateField} = useContext(UserFormContext);

@@ -2,6 +2,10 @@ import React from 'react';
 import RTButton, { RTButtonDesigns } from '../common/RTButton';
 import Progression from './Progression/Progression';
 
+/**
+ * This acts as a placeholder content for the pages that isn't developed
+ * @returns Placeholder Contents
+ */
 const BodyContent:React.FC = () => {
 
     return(

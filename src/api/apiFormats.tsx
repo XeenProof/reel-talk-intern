@@ -1,3 +1,7 @@
+/**
+ * Just a few formats for the api to extract
+ */
+
 export interface Movie{
     id:number,
     name:string,

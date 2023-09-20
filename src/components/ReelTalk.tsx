@@ -2,11 +2,11 @@ import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Body from "./body/Body";
 
-interface ReelTalkProps{
-
-}
-
-const ReelTalk:React.FC = (props:ReelTalkProps) => {
+/**
+ * This acts as a starting point for the components folder
+ * @returns The starting point in the application
+ */
+const ReelTalk:React.FC = () => {
     
     
     return (<div id='main-background'>
