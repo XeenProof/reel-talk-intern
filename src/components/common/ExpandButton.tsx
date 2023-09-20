@@ -6,6 +6,12 @@ interface ExpandButtonProps {
     setState:React.Dispatch<React.SetStateAction<boolean>>
 }
 
+/**
+ * Used as a show more or show less button
+ * Designed with divs to make visuals easier
+ * @param props The state settings
+ * @returns Either show more or show less depending on states
+ */
 const ExpandButton:React.FC<ExpandButtonProps> = (props:ExpandButtonProps) => {
     const {state, setState} = props;
     const text = (state)?"show less":"show more";

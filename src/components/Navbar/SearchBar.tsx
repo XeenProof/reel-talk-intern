@@ -1,6 +1,10 @@
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 
+/**
+ * The design for the search bar is here
+ * @returns The search bar
+ */
 const SearchBar:React.FC = () => {
 
 

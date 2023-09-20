@@ -12,6 +12,12 @@ interface RTTextInputProps{
     onChange?:(s:string)=>void,
 }
 
+/**
+ * A basic textInput area designed for the Profile input page.
+ * Has a show mode, eidt mode with a default display
+ * @param props 
+ * @returns 
+ */
 const RTTextInput:React.FC<RTTextInputProps> = (props:RTTextInputProps) => {
     const {id, 
         style={}, 

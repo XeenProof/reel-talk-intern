@@ -6,6 +6,11 @@ interface MovieCarouselProps{
     movies:Movie[]
 }
 
+/**
+ * A scrollable by dragging carousel of movies
+ * @param props the list of movies we want to display
+ * @returns 
+ */
 const MovieCarousel:React.FC<MovieCarouselProps> = (props:MovieCarouselProps) => {
     const {movies} = props
     const scrollable = useRef<HTMLDivElement>(null);

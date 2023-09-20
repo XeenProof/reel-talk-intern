@@ -7,7 +7,11 @@ import Birthday from "./Birthday/Birthday";
 import GenreSelect from "./GenreSelect/GenreSelect";
 
 
-
+/**
+ * Displays the common features between each page, like the progress bar
+ * Includes a switch for the different pages depending on the progress level
+ * @returns The body that needs to be displayed
+ */
 const Body:React.FC = () => {
     const {state} = useContext(UserFormContext);
     const {progress} = state

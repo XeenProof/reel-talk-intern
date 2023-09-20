@@ -11,6 +11,13 @@ interface ProgressionProps{
     prevStyle?: RTButtonDesigns
 }
 
+/**
+ * A feature used by each page.
+ * An easy place for a next and back button to be placed
+ * 
+ * @param props Any minor changes needed to the buttons 
+ * @returns The two buttons
+ */
 const Progression:React.FC<ProgressionProps> = (props:ProgressionProps) => {
     const {increment, decrement} = useContext(UserFormContext);
 

@@ -6,6 +6,11 @@ interface MovieBasicProps{
     className?:string
 }
 
+/**
+ * The is to create a single card for the caroucel
+ * @param props The info movie we want to display
+ * @returns A movie card for the carousel
+ */
 const MovieBasic:React.FC<MovieBasicProps> = (props:MovieBasicProps) => {
     const {id, src, className=""} = props
     const index = `c-movie-${id}`

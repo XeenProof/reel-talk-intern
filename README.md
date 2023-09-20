@@ -21,6 +21,7 @@ The following pages have been implemented:
 - For the Object-oriented Data Structures, I decided to just use basic interfaces of Javascript.
     - These are only in apiFormats right now
     - If there's anything more complex, I would have considered making full classes so each object can manage itself (i.e validate itself, updating itself, more complex matching)
+- Right Now, the Next button still works even if disabled for easier debugging purposes
 
 # File Format:
 This describes the format inside src, though the placeholder images are all in public/images
@@ -43,6 +44,7 @@ However, there is a system setup here.
     - If the folder has a file with the same name:
         - Then that file is the main file and only file called from outside the folder
         - The other files/folders in the same folder are only there as segments of the main file (like a sub tree)
+        - This does NOT mean the the main file and only call these supporting files though
     - If the folder doesn't have a file with the same name (i.e common):
         - Then everything inside can (and will likely be) called from anywhere and multiple places
         - They are ment as a versitle and reusable component
