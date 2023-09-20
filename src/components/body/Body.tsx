@@ -4,7 +4,7 @@ import Progress from "./Progress/Progress";
 import { UserFormContext } from "../../context/UserFormContext";
 import ProfileDisplay from "./ProfileDisplay/ProfileDisplay";
 import Birthday from "./Birthday/Birthday";
-import GenreSelect from "./GenreSelect/Genre";
+import GenreSelect from "./GenreSelect/GenreSelect";
 
 
 
